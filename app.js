@@ -5,9 +5,11 @@ if (btn)
         // It accepts a config object (see docs)
         browser.tabs.query({ currentWindow:true })
             .then(tabs => {
-                const results = document.querySelector('#results'),
-                    parts = [];            for (let tab of tabs) {
+                const results = document.querySelector('#results');
+                parts = [];            
+                for (let tab of tabs) {
                     parts.push(`<li>${tab.title}: ${tab.url}</li>`);
-                }            results.innerHTML = parts.join('');
+                }            
+                results.innerHTML = parts.join('');
             });
     }
