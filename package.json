@@ -1,0 +1,22 @@
+{
+  "name": "site-watch",
+  "version": "1.0.0",
+  "description": "An extension to keep track of the time you waste on websites",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ribrah77/Site-Watch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ribrah77/Site-Watch/issues"
+  },
+  "homepage": "https://github.com/ribrah77/Site-Watch#readme",
+  "dependencies": {
+    "easytimer.js": "^4.0.1"
+  }
+}
