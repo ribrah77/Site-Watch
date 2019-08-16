@@ -1,3 +1,11 @@
+var { Timer } = require('node_modules/easytimer/dist/easytimer.js');
+
+var timer = new Timer();
+timer.start();
+timer.addEventListener('secondsUpdated', function (e) {
+    $('#basicUsage').html(timer.getTimeValues().toString());
+});
+
 const btn = document.querySelector('#button');
 if (btn)
     btn.addEventListener('click', loadTabs);function loadTabs() {
@@ -13,11 +21,3 @@ if (btn)
                 results.innerHTML = parts.join('');
             });
     }
-
-var { Timer } = require('lib/easytimer/dist/easytimer.min.js');
-
-var timer = new Timer();
-timer.start();
-timer.addEventListener('secondsUpdated', function (e) {
-    $('#basicUsage').html(timer.getTimeValues().toString());
-});
