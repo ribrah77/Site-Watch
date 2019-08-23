@@ -4,7 +4,13 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <div id="basicUsage">00:00:00</div>
+				
+	<p><span id="my_timer">00:00:00</span></p>
+	<button id = "control" onclick="changeState()">START</button>
+	<button id = "reset" onclick="reset()">PAUSE</button>
+
+              
+    
     Hello Firefox extension!
     <button id="button">Show me tabs</button>
     <ul id="results"></ul>    <script src="app.js"></script>
